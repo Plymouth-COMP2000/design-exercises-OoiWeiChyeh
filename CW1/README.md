@@ -7,7 +7,7 @@
 
 ## What This Is
 
-This repository documents the design work for a mobile app meant to help restaurant staff manage operations while giving customers an easier way to browse menus and book tables. It's built around two very different user groups with different needs, which made the design process interesting—and occasionally frustrating.
+This repository documents the design work for a mobile app meant to help restaurant staff manage operations while giving customers an easier way to browse menus and book tables. It's built around two very different user groups with different needs, which made the design process interesting and occasionally frustrating.
 
 The project follows the expected workflow for MAL2017: starting with user research, moving through rough sketches, testing those ideas with actual people, and then refining everything based on what didn't work. The end goal is a functional Android app, but right now this is mostly about getting the design right before diving into code.
 
@@ -47,13 +47,13 @@ design-exercises-OoiWeiChyeh/
 
 ### Understanding the Users
 
-The context analysis identifies two primary user types—restaurant staff and customers—who operate in completely different environments. Staff are dealing with noise, multitasking, and peak-hour chaos. Customers might be browsing at home on a tablet or making last-minute bookings on their phone while walking. These constraints shaped a lot of the interface choices, like larger buttons for staff and clearer confirmation feedback for guests.
+The context analysis identifies two primary user types: restaurant staff and customers who operate in completely different environments. Staff are dealing with noise, multitasking, and peak-hour chaos. Customers might be browsing at home on a tablet or making last-minute bookings on their phone while walking. These constraints shaped a lot of the interface choices, like larger buttons for staff and clearer confirmation feedback for guests.
 
 There's also the question of technical literacy. Some staff are comfortable with mobile apps, others less so. The design had to work for both without feeling dumbed down.
 
 ### Early Sketches
 
-The low-fidelity prototypes were deliberately rough—just enough to test ideas without getting attached to any particular layout. Keeping things at sketch level made it easier to throw out bad ideas quickly. The focus was on interaction flow and information hierarchy rather than making things look polished.
+The low-fidelity prototypes were deliberately rough just enough to test ideas without getting attached to any particular layout. Keeping things at sketch level made it easier to throw out bad ideas quickly. The focus was on interaction flow and information hierarchy rather than making things look polished.
 
 Looking back, some of the early navigation patterns were overly complex. Users pointed that out pretty quickly during testing.
 
@@ -98,7 +98,7 @@ Some of these concerns influenced design decisions (like using larger touch targ
 
 ## Notes on Process
 
-This project follows the MAL2017 coursework structure, which emphasises user-centred design and iterative improvement. The work demonstrates systematic analysis, structured evaluation, and reflective redesign—basically, showing the messy process of how design actually happens rather than pretending everything was perfect from the start.
+This project follows the MAL2017 coursework structure which emphasises user-centred design and iterative improvement. The work demonstrates systematic analysis, structured evaluation and reflective redesign basically, showing the messy process of how design actually happens rather than pretending everything was perfect from the start.
 
 Any AI-assisted work is disclosed in the final submission as required by the module guidelines.
 
