@@ -1,93 +1,111 @@
-# **README – MAL2017 (Software Engineering II)**
+# Restaurant Management Mobile Application
 
-### *Restaurant Management Mobile Application*
+**MAL2017 – Software Engineering II**  
+**Author:** OOI WEI CHYEH (BSCS2509254)
 
-# Restaurant Management Mobile Application  
-MAL2017 – Software Engineering II  
-Author: OOI WEI CHYEH (BSCS2509254)
+---
 
-## 1. Introduction
-This repository contains the design documentation and early-stage interface development for a Restaurant Management Mobile Application. The project focuses on supporting two user groups: restaurant staff and customers. Each group requires specific functionality, such as menu management, reservations, and notification handling.
+## What This Is
 
-The work presented demonstrates the expected design process for MAL2017, beginning with contextual analysis and progressing through low-fidelity designs, usability testing, and iterative refinement.
+This repository documents the design work for a mobile app meant to help restaurant staff manage operations while giving customers an easier way to browse menus and book tables. It's built around two very different user groups with different needs, which made the design process interesting—and occasionally frustrating.
 
-## 2. Scope of Work
-The materials in this repository include:
+The project follows the expected workflow for MAL2017: starting with user research, moving through rough sketches, testing those ideas with actual people, and then refining everything based on what didn't work. The end goal is a functional Android app, but right now this is mostly about getting the design right before diving into code.
 
-- Context of Use analysis  
-- Low-fidelity interface sketches  
-- Storyboards illustrating key user interactions  
-- Usability testing plan and demographic details  
-- Evaluation findings and revision notes  
-- A documented change log reflecting the design evolution
+---
 
-These components form the foundation for the later development of high-fidelity designs and the eventual Android implementation.
+## What's Here
 
-## 3. Repository Structure
-```
+The repo contains:
 
-design/
-context_of_use/
-low_fidelity/
-usability_testing/
-revised_design/
-android_app/
-README.md
+- **Context analysis** – who's using this, where they're using it, and what problems they're trying to solve
+- **Low-fidelity sketches** – early interface ideas drawn out on paper (or Canva, close enough)
+- **Storyboards** – visual narratives showing how staff and guests move through key tasks
+- **Usability testing materials** – consent forms, test plans, participant notes, and a bunch of observations about what went wrong
+- **Revised designs** – updated interfaces that address the issues people actually had
+- **Change documentation** – a running log of what changed and why
+
+These pieces form the foundation for building the high-fidelity UI in Android Studio later on.
+
+---
+
+## Repository Structure
 
 ```
+design-exercises-OoiWeiChyeh/
+  ├── CW1/
+      ├── Documentation/
+      │   ├── Diagram & Forms/
+      │   └── MAL2017_PresentationSlide/
+      ├── Source Code/
+      └── MAL2017_SoftwareEngineering2_CW1_OoiWeiChyeh/
+  └── README.md
+```
 
-The structure reflects an organised workflow, separating research, design artefacts, and early application preparation.
+---
 
-## 4. Design Highlights
-### 4.1 Context of Use
-The analysis defines:
-- Primary users (staff and customers)
-- Their goals and constraints
-- The environments in which the application will be used
-- Relevant usability considerations
+## Key Design Decisions
 
-This informs interface decisions throughout the project.
+### Understanding the Users
 
-### 4.2 Low-Fidelity Interfaces
-Low-fidelity sketches were produced to explore layout, interaction flow, and navigation. These early designs prioritise clarity and functional structure rather than appearance.
+The context analysis identifies two primary user types—restaurant staff and customers—who operate in completely different environments. Staff are dealing with noise, multitasking, and peak-hour chaos. Customers might be browsing at home on a tablet or making last-minute bookings on their phone while walking. These constraints shaped a lot of the interface choices, like larger buttons for staff and clearer confirmation feedback for guests.
 
-### 4.3 Usability Evaluation
-The usability testing phase includes:
-- A formal test plan  
-- Participant profiles  
-- Task scenarios  
-- Observational notes  
-- A summary of issues identified  
+There's also the question of technical literacy. Some staff are comfortable with mobile apps, others less so. The design had to work for both without feeling dumbed down.
 
-Findings from the evaluation guided the changes documented in the revised design section.
+### Early Sketches
 
-### 4.4 Iterative Redesign
-Revisions address:
-- Navigation clarity  
-- Screen density  
-- Reservation flow structure  
-- Button placement and labelling  
+The low-fidelity prototypes were deliberately rough—just enough to test ideas without getting attached to any particular layout. Keeping things at sketch level made it easier to throw out bad ideas quickly. The focus was on interaction flow and information hierarchy rather than making things look polished.
 
-The change log provides a record of the improvements made.
+Looking back, some of the early navigation patterns were overly complex. Users pointed that out pretty quickly during testing.
 
-## 5. Considerations for Later Development
-Although this stage focuses on design rather than implementation, several factors are acknowledged:
+### Usability Testing
 
-- Interface responsiveness across Android devices  
-- Clear separation between customer and staff access  
-- Predictable interaction patterns  
-- Accessibility in noisy or low-light restaurant environments  
-- Smooth transition to higher-fidelity UI and code development  
+Two participants took part: a staff member from a campus café and a university student who fits the guest profile. Both signed consent forms (included in the appendices), and I walked them through paper-based prototypes while they thought aloud.
 
-These considerations ensure the project aligns with real software engineering practice.
+**What came out of it:**
 
-## 6. Academic Context
-This repository documents the design phase for MAL2017 – Software Engineering II.  
-The work demonstrates systematic analysis, user-centred design, structured evaluation, and reflective redesign, consistent with the expectations of a first-class submission.
+- The staff member worried the reservation list would "get messy during the lunch rush" and found the "Add Menu Item" button too easy to miss
+- The student wanted clearer wording (like "Edit Booking" instead of "Modify Reservation") and better feedback when bookings were confirmed
+- Both struggled with inconsistent spacing and expected icons for main navigation
 
-Any AI-assisted components are disclosed within the final coursework documentation as required.
+Honestly, watching people get confused by things that seemed obvious to me was humbling. The test made it clear which labels didn't match user expectations and where the interface needed more breathing room.
 
-## 7. Maintainer
-OOI WEI CHYEH  
-BSc (Hons) Cyber Security  
+### Design Revisions
+
+After testing, several changes were made:
+
+- Replaced vague terms like "Modify" with more direct language
+- Increased button sizes for key actions (Fitts' Law in practice)
+- Added colour-coding for reservation status so staff could scan quickly
+- Improved spacing and alignment across screens
+- Introduced a floating action button (FAB) for adding menu items, making it harder to overlook
+
+The revised storyboards show these updates in context. The core user journeys haven't changed, but interactions should feel smoother now—or at least, that's the hope.
+
+---
+
+## Future Enhancement
+
+This stage is about design, not implementation, but a few things are already on my mind for later development:
+
+- **Responsive layouts** – the interface needs to work across different Android devices and screen sizes
+- **Role-based access** – keeping staff and guest features properly separated without making login annoying
+- **Environmental factors** – ensuring readability in bright restaurant lighting or at night
+- **Performance** – the app needs to handle reservation lists during peak hours without lagging
+
+Some of these concerns influenced design decisions (like using larger touch targets and high-contrast colours), even though the actual coding happens later.
+
+---
+
+## Notes on Process
+
+This project follows the MAL2017 coursework structure, which emphasises user-centred design and iterative improvement. The work demonstrates systematic analysis, structured evaluation, and reflective redesign—basically, showing the messy process of how design actually happens rather than pretending everything was perfect from the start.
+
+Any AI-assisted work is disclosed in the final submission as required by the module guidelines.
+
+---
+
+## About Me
+
+**OOI WEI CHYEH**  
+BSc (Hons) Computer Science (Cyber Security)  
 University of Plymouth
