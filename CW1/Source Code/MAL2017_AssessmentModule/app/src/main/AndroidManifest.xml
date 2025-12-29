@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- WRITE permission only valid up to Android 9 (API 28) -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestaurantPro"
+        tools:targetApi="31">
+
+        <!-- Login Activity (Launcher) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Staff Dashboard -->
+        <activity
+            android:name=".StaffDashboardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Menu Management -->
+        <activity
+            android:name=".MenuManagementActivity"
+            android:exported="false"
+            android:parentActivityName=".StaffDashboardActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Add / Edit Menu Item -->
+        <activity
+            android:name=".AddEditMenuItemActivity"
+            android:exported="false"
+            android:parentActivityName=".MenuManagementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Reservations (Staff) -->
+        <activity
+            android:name=".ReservationsActivity"
+            android:exported="false"
+            android:parentActivityName=".StaffDashboardActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Guest Menu -->
+        <activity
+            android:name=".GuestMenuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- Make Reservation -->
+        <activity
+            android:name=".MakeReservationActivity"
+            android:exported="false"
+            android:parentActivityName=".GuestMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- My Reservations -->
+        <activity
+            android:name=".MyReservationsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- User Profile -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+    </application>
+
+</manifest>

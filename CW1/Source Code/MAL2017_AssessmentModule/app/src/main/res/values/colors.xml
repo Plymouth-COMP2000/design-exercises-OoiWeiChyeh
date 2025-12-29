@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color palette based on requirement: F4E7E1, FF9B45, D5451B, 521C0D -->
+
+    <!-- Main brand colors -->
+    <color name="primary_cream">#F4E7E1</color>        <!-- Light cream background -->
+    <color name="primary_orange">#FF9B45</color>       <!-- Vibrant orange for CTAs -->
+    <color name="primary_red">#D5451B</color>          <!-- Bold red for important actions -->
+    <color name="primary_brown">#521C0D</color>        <!-- Deep brown for text and headers -->
+
+    <!-- Material Design theme colors -->
+    <color name="colorPrimary">#D5451B</color>
+    <color name="colorPrimaryDark">#521C0D</color>
+    <color name="colorAccent">#FF9B45</color>
+
+    <!-- Extended palette for UI states -->
+    <color name="cream_light">#FAF3EF</color>          <!-- Lighter cream for cards -->
+    <color name="cream_dark">#E8D5C9</color>           <!-- Darker cream for borders -->
+    <color name="orange_light">#FFB870</color>         <!-- Light orange for hover states -->
+    <color name="orange_dark">#E88A3A</color>          <!-- Dark orange for pressed states -->
+    <color name="red_light">#E65D2F</color>            <!-- Light red for warnings -->
+    <color name="red_dark">#B03816</color>             <!-- Dark red for errors -->
+    <color name="brown_light">#7A2A15</color>          <!-- Medium brown for secondary text -->
+    <color name="brown_dark">#3A1208</color>           <!-- Very dark brown for emphasis -->
+
+    <!-- Semantic colors -->
+    <color name="success_green">#4CAF50</color>        <!-- Success states -->
+    <color name="warning_yellow">#FFC107</color>       <!-- Warning states -->
+    <color name="error_red">#D5451B</color>            <!-- Error states -->
+    <color name="info_blue">#2196F3</color>            <!-- Information states -->
+
+    <!-- Neutral colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#424242</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#521C0D</color>         <!-- Main text color -->
+    <color name="text_secondary">#7A2A15</color>       <!-- Secondary text color -->
+    <color name="text_hint">#9E9E9E</color>            <!-- Hint text color -->
+    <color name="text_disabled">#BDBDBD</color>        <!-- Disabled text color -->
+
+    <!-- Background colors -->
+    <color name="background_primary">#F4E7E1</color>   <!-- Main background -->
+    <color name="background_secondary">#FAF3EF</color> <!-- Secondary background -->
+    <color name="background_card">#FFFFFF</color>      <!-- Card background -->
+
+    <!-- Status colors for reservations -->
+    <color name="status_confirmed">#4CAF50</color>
+    <color name="status_pending">#FFC107</color>
+    <color name="status_cancelled">#D5451B</color>
+
+    <!-- Ripple and overlay effects -->
+    <color name="ripple_light">#33000000</color>       <!-- 20% black for light backgrounds -->
+    <color name="ripple_dark">#33FFFFFF</color>        <!-- 20% white for dark backgrounds -->
+    <color name="overlay_dim">#80000000</color>        <!-- 50% black for dimming -->
+</resources>
