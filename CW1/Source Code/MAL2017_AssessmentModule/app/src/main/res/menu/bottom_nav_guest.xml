@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bottom navigation menu for guest users -->
+<menu xmlns:android="http://schemas.android.com/android/apk/res/android">
+    <!-- Browse menu navigation item -->
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="@string/browse_menu" />
+
+    <!-- My reservations navigation item -->
+    <item
+        android:id="@+id/nav_reservations"
+        android:icon="@drawable/ic_reservations"
+        android:title="@string/my_reservations" />
+
+    <!-- Profile navigation item -->
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/nav_profile" />
+</menu>

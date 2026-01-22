@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission for API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Notification permission for Android 13+ -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Vibration permission for notifications -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MAL2017_AssessmentModule"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <!-- Main Launcher Activity - Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Registration -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <!-- Forgot Password -->
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <!-- Guest Activities -->
+        <activity
+            android:name=".GuestMenuActivity"
+            android:exported="false"
+            android:label="Menu"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".MakeReservationActivity"
+            android:exported="false"
+            android:label="Make Reservation"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".MyReservationsActivity"
+            android:exported="false"
+            android:label="My Reservations"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <!-- Staff Activities -->
+        <activity
+            android:name=".StaffDashboardActivity"
+            android:exported="false"
+            android:label="Dashboard"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".MenuManagementActivity"
+            android:exported="false"
+            android:label="Menu Management"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".ReservationsActivity"
+            android:exported="false"
+            android:label="Reservations"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".AddEditMenuItemActivity"
+            android:exported="false"
+            android:label="Menu Item"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <!-- Shared Activities -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:label="Profile"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <activity
+            android:name=".ReservationDetailActivity"
+            android:exported="false"
+            android:label="Reservation Details"
+            android:theme="@style/Theme.MAL2017_AssessmentModule.NoActionBar" />
+
+        <!-- Main Activity (not used as launcher) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.MAL2017_AssessmentModule" />
+
+    </application>
+
+</manifest>

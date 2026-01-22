@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_orange">#FF6B35</color>
+    <color name="primary_red">#C1121F</color>
+    <color name="primary_brown">#780000</color>
+
+    <!-- Orange Variants -->
+    <color name="orange_light">#FF8C5A</color>
+    <color name="orange_dark">#E55A25</color>
+
+    <!-- Red Variants -->
+    <color name="red_light">#D32F2F</color>
+    <color name="red_dark">#A00E1A</color>
+
+    <!-- Background Colors -->
+    <color name="background_primary">#FDF0D5</color>
+    <color name="background_card">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Cream/Beige Variants -->
+    <color name="cream_light">#FFF8E7</color>
+    <color name="cream_dark">#F5E6C8</color>
+
+    <!-- Gray Scale -->
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_medium">#9E9E9E</color>
+    <color name="gray_dark">#424242</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+
+    <!-- Status Colors -->
+    <color name="status_confirmed">#4CAF50</color>
+    <color name="status_pending">#FF9800</color>
+    <color name="status_cancelled">#F44336</color>
+    <color name="status_completed">#2196F3</color>
+
+    <!-- Warning Colors -->
+    <color name="warning_yellow">#FFC107</color>
+    <color name="warning_red">#FF5252</color>
+
+    <!-- Material Design Colors (for compatibility) -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

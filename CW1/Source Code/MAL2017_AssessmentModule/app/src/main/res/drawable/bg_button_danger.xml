@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Background drawable for danger/delete buttons with hover/pressed states -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red_dark"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+
+    <!-- Focused state -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/red_light"/>
+            <corners android:radius="12dp"/>
+            <stroke android:width="2dp" android:color="@color/primary_brown"/>
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/primary_red"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.RestaurantPro.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_orange</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+
+    <style name="Widget.RestaurantPro.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary_orange</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
